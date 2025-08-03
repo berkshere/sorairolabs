@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="欢迎访问我们公司主页，我们提供优质的技术服务。">
+    <title>公司主页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #34495e;
+            overflow: hidden;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-align: center;
+            display: inline-block;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #2980b9;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            color: #2c3e50;
+        }
+        .services {
+            display: flex;
+            justify-content: space-around;
+        }
+        .service-box {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            width: 30%;
+            text-align: center;
+        }
+        .service-box h3 {
+            color: #2980b9;
+        }
+        .team-members {
+            display: flex;
+            justify-content: space-around;
+        }
+        .team-member {
+            background-color: #fff;
+            padding: 20px;
+            width: 25%;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .team-member img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #3498db;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>欢迎来到我们的公司</h1>
+        <p>我们提供最专业的技术服务，致力于为客户创造价值。</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#about">关于我们</a>
+        <a href="#services">服务</a>
+        <a href="#team">团队</a>
+        <a href="#contact">联系我们</a>
+    </nav>
+
+    <!-- About Us Section -->
+    <div id="about" class="container section">
+        <h2>关于我们</h2>
+        <p>我们公司成立于2000年，专注于提供高质量的技术服务。我们的团队由经验丰富的专家组成，致力于通过创新和技术解决方案为客户提供卓越的价值。</p>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services" class="container section">
+        <h2>我们的服务</h2>
+        <div class="services">
+            <div class="service-box">
+                <h3>软件开发</h3>
+                <p>为客户提供定制化的软件开发解决方案，支持移动端和桌面端应用。</p>
+            </div>
+            <div class="service-box">
+                <h3>系统集成</h3>
+                <p>我们为企业提供完善的系统集成服务，帮助提升企业运作效率。</p>
+            </div>
+            <div class="service-box">
+                <h3>咨询服务</h3>
+                <p>为企业提供战略咨询，帮助企业制定发展规划和实施方案。</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Team Section -->
+    <div id="team" class="container section">
+        <h2>我们的团队</h2>
+        <div class="team-members">
+            <div class="team-member">
+                <img src="https://via.placeholder.com/120" alt="团队成员1">
+                <h3>张伟</h3>
+                <p>首席技术官</p>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/120" alt="团队成员2">
+                <h3>李娜</h3>
+                <p>项目经理</p>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/120" alt="团队成员3">
+                <h3>王强</h3>
+                <p>首席设计师</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="container section">
+        <h2>联系我们</h2>
+        <p>如果您对我们的服务感兴趣或有任何问题，请填写以下表单与我们联系。</p>
+        <div class="contact-form">
+            <input type="text" placeholder="您的姓名" required>
+            <input type="email" placeholder="您的邮箱" required>
+            <textarea placeholder="您的留言" rows="4" required></textarea>
+            <button type="submit">发送消息</button>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 公司名称. 保留所有权利.</p>
+    </footer>
+</body>
+</html>
